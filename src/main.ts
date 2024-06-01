@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.ts";
 import "./tutorial.ts";
 import "./chaleenge.ts";
+import "./practicalExemples";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>

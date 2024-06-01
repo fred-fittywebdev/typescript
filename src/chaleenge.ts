@@ -5,11 +5,11 @@
 // You can use type annotation or inference
 
 let myFirstName: string = "Fred";
-console.log(myFirstName.length);
+console.log("1 : " + myFirstName.length);
 
 let myAge: number = 47;
 let myFellingAge = myAge - 10;
-console.log(myFellingAge);
+console.log("2 : " + myFellingAge);
 
 let OldGuy: boolean = false;
 if (myFellingAge > 40) {
@@ -17,4 +17,20 @@ if (myFellingAge > 40) {
 } else {
 	OldGuy = false;
 }
-console.log(OldGuy);
+console.log("3 : " + OldGuy);
+
+// CHALLENGE UNION TYPE
+// Create a variable orderStatus of type 'processing' | 'shipped' | 'delivered' and assign it the value 'processing'.
+// Then, try to assign it the values 'shipped' and 'delivered'.
+// Create a variable discount of type number | string and assign it the value 20. Then, try to assign it the value '20%'.
+
+let orderStatus: "processing" | "shipped" | "delivered" = "processing";
+orderStatus = "delivered";
+console.log("4 : " + orderStatus);
+orderStatus = "processing";
+console.log("5 : " + orderStatus);
+
+let discount: number | string = "20%";
+console.log("6 : " + discount);
+discount = 20;
+console.log("7 : " + discount);
